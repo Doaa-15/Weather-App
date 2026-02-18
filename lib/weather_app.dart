@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/onboarding/onboarding_screen.dart';
+import 'package:weather_app/feature/onboarding/onboarding_screen.dart';
 
 class WeatherApp extends StatelessWidget {
   const WeatherApp({super.key});

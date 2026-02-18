@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:weather_app/core/theme/color_app.dart';
-import 'package:weather_app/screens/weather_app_screen.dart';
+
+import 'package:weather_app/feature/home/views/weather_app_body.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({super.key});
@@ -37,7 +38,7 @@ SvgPicture.asset(
  const  Text("@wolf",style:TextStyle( color: Colors.grey,fontSize: 14,fontWeight: FontWeight.w400)),
    const  Gap(250),
 InkWell(
-  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>const WeatherAppScreen())),
+  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>const WeatherAppBody(city: 'Cairo',))),
   child: Container(
     padding:const EdgeInsets.all(8),
     width: 150,
